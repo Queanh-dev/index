@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="box-menu">
+        <nav>
+            <div class="search-container">
+                <form action="" method="">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html"><b>Trang chủ</b></a></li>
+                <li><a href="products.html"><b>Sản phẩm</b></a></li>
+                <li><a href="#"><b>Giới thiệu</b></a></li>
+                <li><a href="#"><b>Tin tức</b></a></li>
+                <li><a href="#"><b>Liên hệ</b></a></li>
+                <li id="login-item"><a href="#" onclick="loginUser()">
+                    <i class="fas fa-sign-in-alt"></i> <b>Đăng nhập</b>
+                </a></li>
+                <li id="register-item"><a href="#">
+                    <i class="fas fa-user-plus"></i> <b>Đăng ký</b>
+                </a></li>
+                <li id="user-item" style="display: none;">
+                    <a href="#" onclick="logoutUser()">
+                        <i class="fas fa-user"></i> <span id="username-display"></span>
+                    </a>
+                </li>
+                <li><a href="#">
+                    <i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="script.js"></script> 
+    <div class="banner">
+        <div class="logo">
+            <img src="Images/logo.png.jpg">
+        </div>
+        <h1>MẬT ONG NGUYÊN CHẤT</h1>
+        <h3>100% từ thiên nhiên</h3>
+        <input type="submit" value="Xem chi tiết">
+    </div>
+    <div class="title">
+        <h1><b>SẢN PHẨM CỦA CHÚNG TÔI</b></h1>
+        <h3>Là mật ong lấy từ rừng U Minh và Tây Nguyên hùng vĩ.</h3>
+    </div>
+    <div class="honey">
+        <div class="honey_box">
+            <div class="honey_box_card">
+                <div class="honey_box_img">
+                    <img src="Images/bacha.jpg" alt="">
+                </div>
+                <div class="honey_box_tag">
+                    <h3>Mật ong bạc hà</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, amet!</p>
+                    <h2>90.000</h2>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>
+            </div>
+            <div class="honey_box_card">
+                <div class="honey_box_img">
+                    <img src="Images/mat1 (1).jpg" alt="">
+                </div>
+                <div class="honey_box_tag">
+                    <h3>Mật ong bạc hà</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, amet!</p>
+                    <h2>90.000</h2>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>
+            </div>
+            <div class="honey_box_card">
+                <div class="honey_box_img">
+                    <img src="Images/mat2.jpg" alt="">
+                </div>
+                <div class="honey_box_tag">
+                    <h3>Mật ong bạc hà</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, amet!</p>
+                    <h2>90.000</h2>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>
+            </div>
+            <div class="honey_box_card">
+                <div class="honey_box_img">
+                    <img src="Images/mat3.jpg" alt="">
+                </div>
+                <div class="honey_box_tag">
+                    <h3>Mật ong bạc hà</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, amet!</p>
+                    <h2>90.000</h2>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>
+            </div>
+            <div class="honey_box_card">
+                <div class="honey_box_img">
+                    <img src="Images/mat4.jpg" alt="">
+                </div>
+                <div class="honey_box_tag">
+                    <h3>Mật ong bạc hà</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, amet!</p>
+                    <h2>90.000</h2>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>
+            </div>
+            <div class="honey_box_card">
+                <div class="honey_box_img">
+                    <img src="Images/bacha.jpg" alt="">
+                </div>
+                <div class="honey_box_tag">
+                    <h3>Mật ong bạc hà</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, amet!</p>
+                    <h2>90.000</h2>
+                    <a href="#" class="f_btn">Mua ngay</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="news">
+        <h1>TIN TỨC-BÍ QUYẾT LÀM ĐẸP</h1>
+    </div>
+    <div class="content">
+        <div class="content_box">
+            <div class="content_box_card">
+                <div class="content_box_img">
+                    <img src="Images/matong.jpg" alt="">
+                </div>
+                <div class="content_box_tag">
+                    <h2>Tiêu đề</h2>
+                    <h4>20/9/2024</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ut unde incidunt, nulla minus, quos animi ullam sequi quod voluptatem, impedit voluptate cupiditate tenetur nam quibusdam!</p>
+                </div>
+            </div>
+            <div class="content_box_card">
+                <div class="content_box_img">
+                    <img src="Images/matong.jpg" alt="">
+                </div>
+                <div class="content_box_tag">
+                    <h2>Tiêu đề 2</h2>
+                    <h4>20/9/2024</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ut unde incidunt, nulla minus, quos animi ullam sequi quod voluptatem, impedit voluptate cupiditate tenetur nam quibusdam!</p>
+                </div>
+            </div>
+            <div class="content_box_card">
+                <div class="content_box_img">
+                    <img src="Images/matong.jpg" alt="">
+                </div>
+                <div class="content_box_tag">
+                    <h2>Tiêu đề 2</h2>
+                    <h4>20/9/2024</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum ut unde incidunt, nulla minus, quos animi ullam sequi quod voluptatem, impedit voluptate cupiditate tenetur nam quibusdam!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="consultation_form">
+        <h2>Liên hệ tư vấn</h2>
+        <form>
+            <input type="text" placeholder="Họ tên..." required>
+            <input type="email" placeholder="Email..." required>
+            <input type="tel" placeholder="Số điện thoại..." required>
+            <textarea placeholder="Nội dung cần tư vấn..." rows="4" required></textarea>
+            <button type="submit">Gửi liên hệ</button>
+        </form>
+    </div>
+    <iframe src="https://www.youtube.com/embed/L6fNi_fbcc8?si=28HPDaNYUzqrt5Rv" frameborder="0"></iframe>
+    <footer>
+        <div class="footer_main">
+
+            <div class="tag">
+                <img src="images/logo.png.jpg">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quaerat ipsa aspernatur ad 
+                    sequi, dolore eveniet vitae quasi. Excepturi ipsa odio impedit sequi at hic velit, minus 
+                    vero sint. Voluptas?
+                </p>
+
+            </div>
+
+            <div class="tag">
+                <h1>Quick Link</h1>
+                <a href="#">Trang chủ</a>
+                <a href="#">Sản phẩm</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Tin tức</a>
+                <a href="#">Liên hệ</a>
+                
+            </div>
+
+            <div class="tag">
+                <h1>Contact Info</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+84 12 345 6789</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+84 32 444 699</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>shinebee@gmail.com</a>
+                
+            </div>
+
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                
+            </div>
+
+            <div class="tag">
+                <h1>Newsletter</h1>
+                <div class="search_bar">
+                    <input type="text" placeholder="You email id here">
+                    <button type="submit">Subscribe</button>
+                </div>                
+            </div>            
+            
+        </div>
+
+        <p class="end">Design By<span><i class="fa-solid fa-face-grin"></i>QueAnh</span></p>
+    </footer>
+</body>
+</html>

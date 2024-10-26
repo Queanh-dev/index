@@ -1,0 +1,412 @@
+*{
+    max-width: 1728px;
+    max-height: auto;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Inter', sans-serif; /* Sử dụng font Inter làm mặc định */
+}
+.box-menu {
+    background-color: #E89F00; /* Màu nền của thanh menu */
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color:  #000; /* Màu chữ của menu */
+    padding: 5px 10px;
+    border-radius: 5px; /* Bo góc cho chữ */
+}
+
+.menu a:hover {
+    background-color: #c78b00; /* Màu nền khi hover */
+    color: #fff; /* Màu chữ khi hover */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+}
+.search-container button {
+    padding: 5px 10px;
+    border-radius: 20px; /* Bo góc tròn cho button */
+    background-color: #c78b00; /* Màu nền của button */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    width: 50px;
+    border: none;
+    margin-right: -70px;
+    margin-top: -41px;
+}
+.search-container button i {
+    color: white; /* Màu chữ của biểu tượng */
+    font-size: 16px; /* Kích thước của biểu tượng */
+}
+
+.search-container button:hover {
+    background-color: #b07e00; /* Màu nền khi hover */
+}
+.banner{
+	position: relative;
+	text-align: center;
+    margin-top: 60px;
+    max-width: 100%;
+}
+.banner::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn trên Chrome/Safari */
+}
+.banner .banner-header{
+    width: 100%; 
+    display: flex;
+}
+
+.banner .banner-header .banner-item-02{
+    background-image: url("Images/banner2.png");
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+    width: 100%;
+    height: 50vh;
+}
+.banner .banner-header .banner-item-02 .banner-logo img {
+    position: absolute; /* Để căn chỉnh vị trí tương đối */
+    top: 10px; /* Cách từ cạnh trên 10px */
+    left: 10px; /* Cách từ cạnh trái 10px */
+}
+.banner-logo img {
+    max-width: 100px; /* Đặt kích thước tối đa cho logo (có thể thay đổi theo nhu cầu) */
+    height: auto; /* Giữ tỉ lệ chiều cao tự động */
+    border-radius: 50%;
+}
+.banner .banner-header .banner-item-02 .text-content h1 {
+    color: #000; /* Màu chữ của tiêu đề */
+    font-size: 36px; /* Kích thước chữ */
+    margin-top: 80px;
+}
+.banner .banner-header .banner-item-02 .text-content a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+}
+.banner .banner-header .banner-item-02 .text-content span{
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+}
+.menu-product{
+    width: 400px;
+    background-color: white;
+    border: 2px solid #c78b00;
+    border-radius: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-left: 30px;
+    margin-top: 30px;
+    float: left;
+}
+.navbar{
+    background-color: #c78b00;
+}
+.menu-product .navbar .menu-item{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.menu-item li{
+    position: relative;
+}
+.menu-item a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid #c78b00;
+    text-align: center;
+}
+.menu-item a:hover{
+    background-color: #8C5B0B;
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+    margin-top: 52px;
+    left: 31px;
+    width: 400px;
+    list-style: none;
+    background-color: transparent;
+    border: 1px solid #c78b00;
+
+}
+.sub-menu li a {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #c78b00;
+    color: #000;
+    text-align: center;
+}
+.sub-menu li a:hover {
+    background-color: #8C5B0B;
+}
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+/* Đảm bảo bố cục không bị lệch */
+.menu-item {
+    flex-grow: 1;
+}
+.menu-filter{
+    float: right;
+    width: 400px;
+    background-color: white;
+    border: 2px solid #c78b00;
+    border-radius: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.navbar-filter{
+    background-color: #c78b00;
+}
+.menu-filter .navbar-filter .item-filter{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.item-filter li{
+    position: relative;
+}
+.item-filter a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    border-bottom: 1px solid #c78b00;
+    text-align: center;
+}
+.item-filter a:hover{
+    background-color: #8C5B0B;
+}
+.sub-filter{
+    display: none;
+    position: absolute;
+    margin-top: 52px;
+    right: 31px;
+    width: 400px;
+    list-style: none;
+    background-color: transparent;
+    border: 1px solid #c78b00;
+}
+.sub-filter li a{
+    padding: 10px;
+    text-align: right;
+    border-bottom: 1px solid #c78b00;
+    color: #000;
+    text-align: center;
+}
+.sub-filter li a:hover {
+    background-color: #8C5B0B;
+}
+.item-filter:hover .sub-filter {
+    display: block;
+}
+
+/* Đảm bảo bố cục không bị lệch */
+.menu-filter {
+    flex-grow: 1;
+}
+.honey{
+    width: 100%;
+    padding: 50px 20px;
+    margin-top: 120px;
+}
+.honey h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 0 0 70px;
+}
+.honey .honey_box{
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    overflow: hidden;
+    gap: 50px;
+}
+.honey .honey_box .honey_box_card{
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #E89F00;
+    margin: auto 20px;
+    border-radius: 15px;
+}
+.honey .honey_box .honey_box_card:hover{
+    box-shadow: 0 0 15px #E89F00;
+}
+.honey .honey_box .honey_box_card .honey_box_img img{
+    width: 225px;
+    border-radius: 15px;
+    margin-top: 12px;
+    height: 150px;
+    object-fit: cover; /* Ảnh sẽ được cắt để phù hợp khung */
+    object-fit: contain; /* Ảnh sẽ vừa với khung nhưng không bị cắt */
+}
+.honey .honey_box .honey_box_card .honey_box_tag h3{
+    margin-top: 10px;
+    color: #E89F00;
+}
+.honey .honey_box .honey_box_card .honey_box_tag p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 100px;
+}
+.honey .honey_box .honey_box_card .honey_box_tag h2{
+    margin-top: 40px;
+    color: #E89F00;
+}
+.honey .honey_box .honey_box_card .honey_box_tag .f_btn{
+    display: inline-block; /* Để nút có thể được định dạng giống như nút */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    background-color: #E89F00; /* Màu nền nâu */
+    color: #ffffff; /* Màu chữ trắng */
+    text-decoration: none; /* Bỏ gạch chân */
+    border-radius: 15px; /* Bo góc cho nút */
+    font-size: 20px; /* Kích thước chữ */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+}
+.honey .honey_box .honey_box_card .honey_box_tag .f_btn:hover{
+        background-color: #C5E800; /* Màu nền khi hover */
+}
+footer{
+    width: 100%;
+    background-image: url("Images/banner.jpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen làm tối */
+    background-blend-mode: darken; /* Trộn màu đen với ảnh */
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+footer .footer_main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+footer .footer_main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #ffffff;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i{
+    margin: 0 5px;
+    color: blue;
+    font-size: 24px;
+    justify-content: center;
+
+}
+
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgba(202,202,202);
+    border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+
+footer .footer_main .tag .search_bar button{
+    padding: 7px 15px;
+    background: brown;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+
+footer .end span{
+    color: #089da1;
+    margin-left: 10px;
+}

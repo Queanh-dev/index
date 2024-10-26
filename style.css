@@ -1,0 +1,444 @@
+*{
+    max-width: 1728px;
+    max-height: auto;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Inter', sans-serif; /* Sử dụng font Inter làm mặc định */
+}
+.box-menu {
+    background-color: #E89F00; /* Màu nền của thanh menu */
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color:  #000; /* Màu chữ của menu */
+    padding: 5px 10px;
+    border-radius: 5px; /* Bo góc cho chữ */
+}
+
+.menu a:hover {
+    background-color: #c78b00; /* Màu nền khi hover */
+    color: #fff; /* Màu chữ khi hover */
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+}
+.search-container button {
+    padding: 5px 10px;
+    border-radius: 20px; /* Bo góc tròn cho button */
+    background-color: #c78b00; /* Màu nền của button */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    width: 50px;
+    border: none;
+    margin-right: -70px;
+    margin-top: -41px;
+}
+.search-container button i {
+    color: white; /* Màu chữ của biểu tượng */
+    font-size: 16px; /* Kích thước của biểu tượng */
+}
+
+.search-container button:hover {
+    background-color: #b07e00; /* Màu nền khi hover */
+}
+.banner{
+    width: 100%;
+    height: 50vh;
+    background-image: url(Images/banner.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+    position: relative; /* Để các thuộc tính tuyệt đối hoạt động */
+    text-align: center; 
+    display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+    flex-direction: column; /* Sắp xếp các thành phần theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center;
+}
+.logo {
+    position: absolute; /* Để căn chỉnh vị trí tương đối */
+    top: 10px; /* Cách từ cạnh trên 10px */
+    left: 10px; /* Cách từ cạnh trái 10px */
+}
+
+.logo img {
+    max-width: 100px; /* Đặt kích thước tối đa cho logo (có thể thay đổi theo nhu cầu) */
+    height: auto; /* Giữ tỉ lệ chiều cao tự động */
+    border-radius: 50%;
+}
+.banner h1 {
+    color: #000; /* Màu chữ của tiêu đề */
+    font-size: 36px; /* Kích thước chữ */
+    margin: 0; /* Bỏ margin mặc định */
+}
+.banner h3 {
+    color: #E89F00; /* Màu chữ của phụ đề */
+    font-size: 24px; /* Kích thước chữ */
+    margin: 0 40px;
+    font-weight: normal; /* Thêm margin trên và dưới */
+}
+input[type="submit"] {
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    background-color: #E89F00; /* Màu nền của nút */
+    color: #fff; /* Màu chữ của nút */
+    border: none; /* Bỏ viền mặc định */
+    border-radius: 30px; /* Bo góc cho nút */
+    font-size: 18px; /* Kích thước chữ */
+    cursor: pointer; /* Hiệu ứng con trỏ khi hover */
+    margin-top: 30px; /* Thêm khoảng cách giữa h3 và nút submit */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+}
+input[type="submit"]:hover {
+    background-color: #c78b00; /* Màu nền khi hover */
+}
+.title{
+    text-align: center;
+    margin-top: 10px;
+}
+.title h1{
+    position: relative; /* Để sử dụng ::before và ::after */
+    display: inline-block; /* Đảm bảo thẻ h1 là một khối có thể căn giữa */
+    font-size: 36px; /* Kích thước chữ cho tiêu đề */
+    color: #000; /* Màu vàng cam cho tiêu đề */
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+    padding: 0 20px; /* Khoảng cách bên trong giữa các đường line */
+}
+.title h1::before,
+.title h1::after {
+    content: ''; /* Nội dung rỗng để tạo các đường line */
+    position: absolute;
+    top: 40px; /* Đặt đường line ở giữa chiều cao của thẻ h1 */
+    width: 350px; /* Chiều dài của đường line */
+    height: 2px; /* Chiều cao của đường line */
+    background-color: #000; /* Màu sắc của đường line */
+}
+
+.title h1::before {
+    left: -350px; /* Đặt đường line bên trái cách thẻ h1 120px */
+}
+
+.title h1::after {
+    right: -350px; /* Đặt đường line bên phải cách thẻ h1 120px */
+}
+.title h3{
+    color: #333; /* Màu xám cho đoạn mô tả */
+    margin-top: -5px; /* Khoảng cách từ tiêu đề đến mô tả */
+    font-weight: normal; /* Định dạng chữ bình thường */
+}
+.honey{
+    width: 100%;
+    padding: 70px 0;
+    margin-top: -40px;
+}
+.honey .honey_box{
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.honey .honey_box .honey_box_card{
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #E89F00;
+    margin: auto 20px;
+    border-radius: 15px;
+}
+.honey .honey_box .honey_box_card:hover{
+    box-shadow: 0 0 15px #E89F00;
+}
+.honey .honey_box .honey_box_card .honey_box_img img{
+    width: 225px;
+    border-radius: 15px;
+    margin-top: 12px;
+    height: 150px;
+    object-fit: cover; /* Ảnh sẽ được cắt để phù hợp khung */
+    object-fit: contain; /* Ảnh sẽ vừa với khung nhưng không bị cắt */
+}
+.honey .honey_box .honey_box_card .honey_box_tag h3{
+    margin-top: 10px;
+    color: #E89F00;
+}
+.honey .honey_box .honey_box_card .honey_box_tag p{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 100px;
+}
+.honey .honey_box .honey_box_card .honey_box_tag h2{
+    margin-top: 40px;
+    color: #E89F00;
+}
+.honey .honey_box .honey_box_card .honey_box_tag .f_btn{
+    display: inline-block; /* Để nút có thể được định dạng giống như nút */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    background-color: #E89F00; /* Màu nền nâu */
+    color: #ffffff; /* Màu chữ trắng */
+    text-decoration: none; /* Bỏ gạch chân */
+    border-radius: 15px; /* Bo góc cho nút */
+    font-size: 20px; /* Kích thước chữ */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu nền khi hover */
+}
+.honey .honey_box .honey_box_card .honey_box_tag .f_btn:hover{
+        background-color: #C5E800; /* Màu nền khi hover */
+}
+.news h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    margin-top: -50px;
+}
+
+.news h1::before,
+.news h1::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #000;
+    margin: 0 10px;
+}
+
+.news h1 span {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 28px;
+    color: #000;
+}
+.content{
+    margin-top: 10px;
+}
+.content_box{
+    width: 95%;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: -10px;
+}
+.content_box_card{
+    width: 750px;
+    height: 200px;
+    text-align: right;
+    border: 1px solid #E89F00;
+    margin: auto 20px;
+    align-items: flex-start; 
+    padding: 0px;
+    overflow: hidden;
+}
+.content_box_img {
+    flex: 0 0 auto; /* Hình ảnh sẽ không co lại */
+}
+
+.content_box_img img {
+    width: 250px; /* Giới hạn chiều rộng của hình ảnh */
+    height: 240px;
+    margin-top: -20px;
+    display: block;
+    padding: 0 -30px;
+    margin-right: 10px;
+}
+.content_box_tag {
+    flex: 1; /* Đảm bảo phần nội dung chiếm toàn bộ không gian còn lại */
+    margin-top: -215px;
+    margin-left: 300px
+}
+
+.content_box_tag h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #000; /* Màu tiêu đề */
+    text-align: left;
+}
+
+.content_box_tag h4 {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555; /* Màu ngày đăng */
+    text-align: left;
+    margin-top: -5px;
+}
+
+.content_box_tag p {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333; /* Màu nội dung */
+    text-align: left;
+}
+.consultation_form {
+    width: 600px; /* Chiều rộng của form */
+    border: 1px solid #E89F00; /* Đường viền cho form */
+    padding: 20px; /* Khoảng cách bên trong */
+    border-radius: 8px; /* Bo góc cho form */
+    margin-left: 900px; /* Khoảng cách với card */
+    margin-top: -670px;
+}
+.consultation_form h2{
+    text-align: center;
+}
+form input,
+textarea {
+    width: 575px; /* Chiều rộng đầy đủ */
+    padding: 10px; /* Khoảng cách bên trong */
+    border: 1px solid #E89F00; /* Đường viền cho input */
+    border-radius: 4px; /* Bo góc cho input */
+    font-size: 14px; /* Kích thước chữ cho input */
+    margin-bottom: 15px; /* Khoảng cách giữa các trường */
+}
+
+form button {
+    background-color: #E89F00; /* Màu nền cho nút */
+    color: #fff; /* Màu chữ */
+    padding: 10px 15px; /* Khoảng cách bên trong */
+    border: none; /* Không có viền */
+    border-radius: 4px; /* Bo góc cho nút */
+    cursor: pointer; /* Con trỏ khi hover */
+    font-size: 16px; /* Kích thước chữ cho nút */
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #C5E800; /* Màu nền khi hover */
+}
+iframe{
+    width: 640px;
+    height: 350px;
+    margin-left: 900px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+footer{
+    width: 100%;
+    background-image: url("Images/banner.jpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen làm tối */
+    background-blend-mode: darken; /* Trộn màu đen với ảnh */
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+footer .footer_main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+footer .footer_main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #ffffff;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i{
+    margin: 0 5px;
+    color: blue;
+    font-size: 24px;
+    justify-content: center;
+
+}
+
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgba(202,202,202);
+    border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+
+footer .footer_main .tag .search_bar button{
+    padding: 7px 15px;
+    background: brown;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+
+footer .end span{
+    color: #089da1;
+    margin-left: 10px;
+}
